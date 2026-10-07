@@ -73,4 +73,4 @@ The historical [NextGen_Hydra acquisition workflow](https://github.com/Mitchel34
 
 ## License and attribution
 
-No blanket open-source license has been selected for original HYDRA code. Public visibility is not an open-source license grant; see [LICENSE_STATUS.md](LICENSE_STATUS.md). Retained Mamba/SSD portions preserve their Apache-2.0 and MIT notices and license texts; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). This is independent research, not an official NOAA, CIROH, Arm or MLX distribution.
+No blanket open-source license has been selected for original HYDRA code. Public visibility is not an open-source license grant; see [LICENSE_STATUS.md](LICENSE_STATUS.md). Retained Mamba/SSD portions preserve their Apache-2.0 and MIT notices and license texts; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). This is independent research, not an official NOAA, CIROH, or MLX distribution.
