@@ -1,0 +1,62 @@
+{
+  "data": "synthetic; analytic untrained coefficients; no hydrologic simulation",
+  "illustrative_fixed_support_score": {
+    "bias_convention": "positive_overprediction",
+    "cells": [
+      {
+        "count": 1,
+        "gauge": "synthetic-gauge",
+        "lead": 1,
+        "mae": 1.0,
+        "nrmse": 0.5,
+        "pbias_percent": 10.0,
+        "pbias_undefined": null,
+        "rmse": 1.0
+      },
+      {
+        "count": 1,
+        "gauge": "synthetic-gauge",
+        "lead": 2,
+        "mae": 1.0,
+        "nrmse": 0.5,
+        "pbias_percent": 8.333333333333332,
+        "pbias_undefined": null,
+        "rmse": 1.0
+      },
+      {
+        "count": 1,
+        "gauge": "synthetic-gauge",
+        "lead": 3,
+        "mae": 1.0,
+        "nrmse": 0.5,
+        "pbias_percent": 7.142857142857142,
+        "pbias_undefined": null,
+        "rmse": 1.0
+      }
+    ],
+    "missing_target_rows": 0,
+    "primary": 0.5,
+    "registered_rows": 3,
+    "scored_rows": 3,
+    "status": "SCORED_FIXED_SUPPORT"
+  },
+  "internal_kernel": {
+    "architecture": "gru32",
+    "dry_factor": 1.0687518759074013,
+    "factor_range": [
+      0.5,
+      2.0
+    ],
+    "origin_unchanged": true,
+    "parameters": 3489,
+    "repeat_is_exact": true,
+    "state_is_candidate_only": true,
+    "wet_factor": 1.0748261791296594
+  },
+  "model_id": "c47f4bd32bdfed561ba4588fb235f1f7040366621bb96d61f459db73292b5a99",
+  "observation_contract": {
+    "accepted_age_hours": 1,
+    "future_value_rejected": true
+  },
+  "scientific_skill_claim": false
+}

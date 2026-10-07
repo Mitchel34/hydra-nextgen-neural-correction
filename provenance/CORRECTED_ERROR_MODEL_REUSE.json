@@ -1,0 +1,103 @@
+{
+  "schema": "hydra-public-outlet-lineage/1",
+  "note": "Sanitized lineage from the existing source-reuse manifest; reference source files are not redistributed here. Private absolute locations and operational metadata omitted.",
+  "source_reuse_manifest_sha256": "0ebcfccc7e35830ad23dbae03d88cfb9aed05bb66d45ec0bd5e326452522e5d8",
+  "upstream_sources": [
+    {
+      "repository": "state-spaces/mamba",
+      "commit": "e9594ce1c732d97440f0332fdc43170a2294dbfa",
+      "reference_files": [
+        {
+          "source_path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/state-spaces/mamba/e9594ce1c732d97440f0332fdc43170a2294dbfa/LICENSE",
+          "sha256": "760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5",
+          "bytes": 11348
+        },
+        {
+          "source_path": "mamba_ssm/modules/mamba2.py",
+          "url": "https://raw.githubusercontent.com/state-spaces/mamba/e9594ce1c732d97440f0332fdc43170a2294dbfa/mamba_ssm/modules/mamba2.py",
+          "sha256": "605e4439ff0baec8d8acaf4a191d9f0570eea9900065a065909124c472b08707",
+          "bytes": 17479
+        },
+        {
+          "source_path": "mamba_ssm/modules/ssd_minimal.py",
+          "url": "https://raw.githubusercontent.com/state-spaces/mamba/e9594ce1c732d97440f0332fdc43170a2294dbfa/mamba_ssm/modules/ssd_minimal.py",
+          "sha256": "6442a9fe25a6792258df657392ab1fab4dd873ee777d9dd5783cc76030218e07",
+          "bytes": 4144
+        }
+      ]
+    },
+    {
+      "repository": "ml-explore/mlx-lm",
+      "commit": "dcbcf786c0cf56f9a12fabe9468c887781431ae2",
+      "reference_files": [
+        {
+          "source_path": "LICENSE",
+          "url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/dcbcf786c0cf56f9a12fabe9468c887781431ae2/LICENSE",
+          "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+          "bytes": 1066
+        },
+        {
+          "source_path": "mlx_lm/models/mamba2.py",
+          "url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/dcbcf786c0cf56f9a12fabe9468c887781431ae2/mlx_lm/models/mamba2.py",
+          "sha256": "36d6841678e32dbd132cb1ea94d068f88779287350c58d4b2de34b1317af0fdf",
+          "bytes": 8567
+        },
+        {
+          "source_path": "mlx_lm/models/ssm.py",
+          "url": "https://raw.githubusercontent.com/ml-explore/mlx-lm/dcbcf786c0cf56f9a12fabe9468c887781431ae2/mlx_lm/models/ssm.py",
+          "sha256": "32ccdb827cdd03ad900b90697b48963106b4c7466ba446b56ff7cedeecfb526e",
+          "bytes": 7600
+        }
+      ]
+    }
+  ],
+  "local_definition_reuse": [
+    {
+      "source": "review/evidence/nextgen-sequence-execution-v1/model/sequence_mlx.py",
+      "source_sha256": "2a261b10e2430d96c19b8613b5cf54be61f39c9bd07b1020dffb2f1f98475a56",
+      "destination": "src/hydra_correctors/outlet/preserved_memory_mlx.py",
+      "symbols": [
+        {
+          "name": "stable_segment_sum",
+          "sha256": "39d6b697a1ee0c844aac5fa17d80b6415da20fe35190333f7e055de620bd932e"
+        },
+        {
+          "name": "ssd_full_sequence",
+          "sha256": "15c8fd961491f8cc35df2640551b652c083bd00d3073b65d8f82126636cdeba2"
+        },
+        {
+          "name": "Mamba2MLX",
+          "sha256": "dbaad5cb0807ce12c5fac89dceb6c67be26f34b68b1b2db8694497bd26380647"
+        },
+        {
+          "name": "ResidualMemoryStage",
+          "sha256": "bc50d1839cac16a10c4be2a97553808872942bfc830913c342e8691f9ec99049"
+        }
+      ],
+      "extraction": "definitions unchanged; module docstring/imports narrowed"
+    },
+    {
+      "source": "review/evidence/nextgen-sequence-execution-v1/model/transformer_shared.py",
+      "source_sha256": "4e47f6ed34d831af34cfb87d69b761404eaccfccef1832f813ab67174281154d",
+      "destination": "src/hydra_correctors/outlet/preserved_attention_mlx.py",
+      "symbols": [
+        {
+          "name": "historical_age_positions",
+          "sha256": "f1b374152ea3b78f8fbec067e3afdddb02307beb9cfc93f4bdef0dddb2fb6f9e"
+        },
+        {
+          "name": "FullHistoricalAttention",
+          "sha256": "f8859ab204494127d6ddb597fa4700c7463804bb798920ccff1df1af5354c591"
+        },
+        {
+          "name": "PreNormBlock",
+          "sha256": "639a1b6d5be46529aa8d6fc3ba6300faeca94c5cc4b36d041e18bdb61b705cad"
+        }
+      ],
+      "extraction": "definitions unchanged; module docstring/imports narrowed"
+    }
+  ],
+  "weights_or_scalers_reused": false,
+  "numerical_equivalence_claim": "Only copied definitions are textually identical; modified adapter requires new synthetic qualification. No upstream optimized-kernel equivalence claimed."
+}

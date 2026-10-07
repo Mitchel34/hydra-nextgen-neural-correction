@@ -1,0 +1,117 @@
+{
+  "schema": "hydra-curated-source/1",
+  "snapshot_date": "2026-10-07",
+  "note": "Private source histories, data and operational records are not distributed. Source hashes identify the inspected bytes; repository HEAD alone does not identify uncommitted working source.",
+  "files": [
+    {
+      "public_path": "src/hydra_correctors/kernels.py",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "prototypes/internal_neural_kernels_v1/reference.py",
+      "source_sha256": "9b991bffeb4027c4e27c55c12e82c9b107c2854f2fff3f645c34dccc19ba5bc3",
+      "published_sha256": "9b991bffeb4027c4e27c55c12e82c9b107c2854f2fff3f645c34dccc19ba5bc3",
+      "changes": [
+        "Byte-for-byte source copy."
+      ]
+    },
+    {
+      "public_path": "native/kernels.c",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "prototypes/internal_neural_kernels_v1/kernels.c",
+      "source_sha256": "42b3d3e0b8dc144bd7c048148363406f546bc2fa3b8e5c104d8c7ac4aa62e52d",
+      "published_sha256": "42b3d3e0b8dc144bd7c048148363406f546bc2fa3b8e5c104d8c7ac4aa62e52d",
+      "changes": [
+        "Byte-for-byte source copy."
+      ]
+    },
+    {
+      "public_path": "native/kernels.h",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "prototypes/internal_neural_kernels_v1/kernels.h",
+      "source_sha256": "f18a68206a324ee64c053a0cd557c404ab75130abdf70b93431d347faff8a617",
+      "published_sha256": "f18a68206a324ee64c053a0cd557c404ab75130abdf70b93431d347faff8a617",
+      "changes": [
+        "Byte-for-byte source copy."
+      ]
+    },
+    {
+      "public_path": "src/hydra_correctors/evaluation.py",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "src/hydra_internal/evaluation.py",
+      "source_sha256": "23854a6f39ba9ef2719b26e964ad5375ee0fe4650a187bea33279b1f975e80c4",
+      "published_sha256": "23854a6f39ba9ef2719b26e964ad5375ee0fe4650a187bea33279b1f975e80c4",
+      "changes": [
+        "Byte-for-byte source copy."
+      ]
+    },
+    {
+      "public_path": "tests/test_evaluation.py",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "tests/test_evaluation.py",
+      "source_sha256": "84f9b3ef0a5d4c5c327251398f7a58fc11f965d95bf56d1bdc94f5fcce05d4f3",
+      "published_sha256": "82c3541695e4cbb467b37ac8ffe19eaa34161d71cd2c4381cce82da9ac81b129",
+      "changes": [
+        "Package import renamed; test logic unchanged."
+      ]
+    },
+    {
+      "public_path": "tests/test_native_kernels.py",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "prototypes/internal_neural_kernels_v1/test_kernels.py",
+      "source_sha256": "5570f6ba68f665831621ae40e42af92ed01180305bdef8120be629dc49482151",
+      "published_sha256": "9f153378d08ecd9514b1fd2342a998bd42569228bad8c406f2b7f37e6058975a",
+      "changes": [
+        "Package import renamed; test logic unchanged."
+      ]
+    },
+    {
+      "public_path": "src/hydra_correctors/outlet/models_mlx.py",
+      "source_collection": "AI-HYDRA-NextGen",
+      "source_relative_path": "src/hydra_ai/corrected_error_v1/models_mlx.py",
+      "source_sha256": "6a193fc89f52b3f7af322a3407acf67bde699bc4c68bc4e8f1e80899f688b797",
+      "published_sha256": "6a193fc89f52b3f7af322a3407acf67bde699bc4c68bc4e8f1e80899f688b797",
+      "changes": [
+        "Byte-for-byte source copy."
+      ]
+    },
+    {
+      "public_path": "src/hydra_correctors/outlet/preserved_attention_mlx.py",
+      "source_collection": "AI-HYDRA-NextGen",
+      "source_relative_path": "src/hydra_ai/corrected_error_v1/preserved_attention_mlx.py",
+      "source_sha256": "b4dd0a5a96331a417eb372758334b7232bd095c6d2391c4b3a9cea37198115bd",
+      "published_sha256": "b4dd0a5a96331a417eb372758334b7232bd095c6d2391c4b3a9cea37198115bd",
+      "changes": [
+        "Byte-for-byte source copy."
+      ]
+    },
+    {
+      "public_path": "src/hydra_correctors/outlet/preserved_memory_mlx.py",
+      "source_collection": "AI-HYDRA-NextGen",
+      "source_relative_path": "src/hydra_ai/corrected_error_v1/preserved_memory_mlx.py",
+      "source_sha256": "a1de219a971b02110a0c8639498131597226a42382eb4a7bdcd5ef1c70128607",
+      "published_sha256": "a1de219a971b02110a0c8639498131597226a42382eb4a7bdcd5ef1c70128607",
+      "changes": [
+        "Byte-for-byte source copy."
+      ]
+    },
+    {
+      "public_path": "src/hydra_correctors/outlet/licenses/MAMBA_APACHE_2_0.txt",
+      "source_collection": "AI-HYDRA-NextGen",
+      "source_relative_path": "src/hydra_ai/corrected_error_v1/licenses/MAMBA_APACHE_2_0.txt",
+      "source_sha256": "760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5",
+      "published_sha256": "760939b000194d04548ede6a857bbe735d1695d8422ec85955c8e2bd7f4b95c5",
+      "changes": [
+        "Byte-for-byte source copy."
+      ]
+    },
+    {
+      "public_path": "src/hydra_correctors/outlet/licenses/MLX_LM_MIT.txt",
+      "source_collection": "AI-HYDRA-NextGen",
+      "source_relative_path": "src/hydra_ai/corrected_error_v1/licenses/MLX_LM_MIT.txt",
+      "source_sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+      "published_sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+      "changes": [
+        "Byte-for-byte source copy."
+      ]
+    }
+  ]
+}
