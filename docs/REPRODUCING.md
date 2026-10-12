@@ -28,3 +28,7 @@ The check explicitly selects CPU, creates scratch parameters, switches to evalua
 The bare outlet classes are research numerical components. Callers must independently enforce feature provenance, masks, valid site indices, scaling and availability; passing shapes alone is insufficient.
 
 See [VALIDATION.md](VALIDATION.md) for the exact checks actually completed for this publication.
+
+## Retained real-data baseline aggregates
+
+Run `python scripts/check_baseline.py` and `PYTHONPATH=src python -m unittest discover -s tests -p test_baseline_report.py -v`. These use the checked-in [C evaluation bundle](../results/c_physical_baseline_2019_10/README.md), reproduce sufficient-statistic arithmetic and check hashes/scope. They do not load raw forecasts, observations or model weights. For the optional figure, install the `report` extra in an isolated environment and run `python scripts/plot_baseline.py`. Matplotlib is not required by the core demo or baseline arithmetic.

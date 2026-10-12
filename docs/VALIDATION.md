@@ -20,3 +20,20 @@ All inputs and coefficients used here are synthetic or analytic. Zero scientific
 The optional MLX check reused already installed dependencies. A fresh optional-dependency installation, other operating systems, Mamba inference/training, gradients, scientific data preparation, physical coupling, water/energy conservation and optimized-kernel equivalence were not validated by this release. The fresh-install result applies to the dependency-free core.
 
 The source hashes and transformations are recorded in [SOURCE_PROVENANCE.json](SOURCE_PROVENANCE.json). Independent source-boundary and exact-tree privacy review records are retained with the publication checkpoint; private paths and operational records are deliberately excluded from the public tree.
+
+## Consolidation validation — 12 October 2026
+
+The existing 7 October validation above remains historical. The current public update adds a retained real-data physical-baseline aggregate bundle and original small report/check code. It does not rerun the physical experiment or read the raw forecasts/observations.
+
+| Check actually executed | Result |
+| --- | --- |
+| Existing evaluation guards, synthetic demo, and new retained-baseline tests | 24 passed: 17 + 1 + 6; zero failures/errors |
+| Original standalone native C/Python inference fixtures | 15 passed; 89 successful/43 rejected C calls, 89 successful/10 rejected Python calls |
+| C aggregate evidence and count/scope/hash check | Pass; 13,203 cells and the saved pooled RMSE/MAE/bias reproduced |
+| Existing extraction/third-party license provenance | All 11 published and current original-source hashes matched |
+| Combined existing/new source index | 16 provenance-bound files matched |
+| Quantitative figure | Rendered and visually checked; Matplotlib 3.11.2, NumPy 2.5.4, Python 3.12; no clipping or mislabeled comparison |
+
+The dependency-free software groups completed in about 0.06 seconds; the native fixture helper (including C compilation) completed in about 0.99 seconds on this host. These are small software-check timings, not training or deployment benchmarks. The optional plotting dependencies were isolated for figure generation and did not change the research runtime. No scientific fits, native hydrologic model calls, archive regeneration or campaign restart occurred. The unchanged optional MLX path was not rerun.
+
+The machine-readable [software evaluation](../results/software_checks_2026_10_12.json), [C report](../results/c_physical_baseline_2019_10/README.md), [metric provenance](../results/c_physical_baseline_2019_10/provenance.json) and [artifact checksums](../results/c_physical_baseline_2019_10/CHECKSUMS.sha256) are retained in Git. Real-data metric evidence is separate from generated kernel fixtures. Raw result records with private process/source-path details are excluded. Independent parent review of the frozen publication tree is still required before push.

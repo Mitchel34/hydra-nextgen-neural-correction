@@ -1,0 +1,53 @@
+{
+  "existing_extracted_code_and_third_party_license_hashes_reverified": 11,
+  "files": [
+    {
+      "changes": [
+        "New public aggregate-report/check code; no native hydrologic component or private runtime copied."
+      ],
+      "public_path": "src/hydra_correctors/baseline_report.py",
+      "published_sha256": "163e11e48c85a4f457efcc5ee7b0d1de61e3889ccbe127402ed8aceb2d683439",
+      "source_collection": "Original HYDRA public reporting adaptation"
+    },
+    {
+      "changes": [
+        "New public aggregate-report/check code; no native hydrologic component or private runtime copied."
+      ],
+      "public_path": "tests/test_baseline_report.py",
+      "published_sha256": "7126c4f88756ed06cf5f734c164abcb10ee3245f86186309fe5c12d1a3497d31",
+      "source_collection": "Original HYDRA public reporting adaptation"
+    },
+    {
+      "changes": [
+        "New public aggregate-report/check code; no native hydrologic component or private runtime copied."
+      ],
+      "public_path": "scripts/check_baseline.py",
+      "published_sha256": "1f2f40b4c2f72512987eb794e7e04acb7ee16fbf37f631620880d829407219b6",
+      "source_collection": "Original HYDRA public reporting adaptation"
+    },
+    {
+      "changes": [
+        "New public aggregate-report/check code; no native hydrologic component or private runtime copied."
+      ],
+      "public_path": "scripts/plot_baseline.py",
+      "published_sha256": "bb391167a9f7ad56c5a32f58ecc9630d1803b36bc5db3bc619631252fcc3e5a2",
+      "source_collection": "Original HYDRA public reporting adaptation"
+    },
+    {
+      "changes": [
+        "New public aggregate-report/check code; no native hydrologic component or private runtime copied."
+      ],
+      "public_path": "scripts/verify_source.py",
+      "published_sha256": "84d2cb3eba961b4dfe97fc464f1a2fd5629e352fe76243ba97c0ecff9dd647ec",
+      "source_collection": "Original HYDRA public reporting adaptation"
+    }
+  ],
+  "new_third_party_source_vendored": false,
+  "original_extraction_manifest": "docs/SOURCE_PROVENANCE.json",
+  "original_license_status_unchanged": true,
+  "private_source_histories_or_runtime_records_imported": false,
+  "public_base_commit": "7be0b1848dc180b506ac22ec00169aebd3c798f7",
+  "schema": "hydra-public-consolidation-provenance/1",
+  "scientific_result_provenance": "results/c_physical_baseline_2019_10/provenance.json",
+  "snapshot_date": "2026-10-12"
+}

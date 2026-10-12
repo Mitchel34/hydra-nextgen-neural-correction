@@ -1,0 +1,50 @@
+{
+  "USGS_parameter": "00060",
+  "aggregation": "Pool SSE/SAE/signed-error totals over scored cells; do not average lead RMSE to obtain pooled RMSE",
+  "baseline_kind": "physical_reference",
+  "data_access_or_campaign_authority_granted": false,
+  "execution_enabled": false,
+  "external_forecasts": {
+    "artifact_id": "HYDRA-C-P-201910-hourly-18lead",
+    "bytes": 1718272,
+    "included_in_repository": false,
+    "sha256": "c9925bc12a1345dc3e958a98cb92e6a8ad9a1e280a8fac84afce615b83e93b34",
+    "storage": "External retained research storage; no public download URL or machine-specific path"
+  },
+  "external_observations": {
+    "included_in_repository": false,
+    "source": "USGS 03479000 / parameter 00060, retained canonical hourly targets"
+  },
+  "gauge": "03479000",
+  "input": "metrics_by_lead.csv",
+  "issue_window_UTC": {
+    "start_inclusive": "2019-10-01T00:00:00Z",
+    "stop_exclusive": "2019-11-01T00:00:00Z"
+  },
+  "lead_hours": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "manifest_kind": "RETAINED_BASELINE_REPORT_ONLY",
+  "outlet_segment": 1017693,
+  "physical_run_requested": false,
+  "private_run_configuration_or_accounting_included": false,
+  "schema": "hydra-public-evaluation-manifest/1",
+  "scoring_units": "m3 s-1"
+}

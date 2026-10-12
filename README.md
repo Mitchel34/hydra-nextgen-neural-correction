@@ -4,7 +4,7 @@ Research software for correcting hydrologic forecasts at two levels: **outlet st
 
 The public package includes original C/Python MLP and GRU inference kernels, forecast-availability and evaluation guards, and the retained MLX GRU–Transformer outlet architecture. The default demo is deterministic, offline and dependency-free.
 
-**Status — 7 October 2026:** engineering research, not an operational forecasting system. The current internal-correction continuation has recorded **zero scientific fits**. Its native lifecycle and scientific prerequisites remain under qualification. Older outlet work has separate experiments; their results and data are not reproduced here. No forecast-skill improvement is claimed by this release.
+**Status — 12 October 2026:** engineering research, not an operational forecasting system. The current internal-correction continuation has zero learned fits. A composed physical baseline on October 2019 C development data has now been scored against USGS and its small evaluation products are included below. It has no paired learned-correction result; original native-run and physics/state limitations remain explicit. Earlier outlet studies are separate and are not ranked against this C window.
 
 ## Try it
 
@@ -30,6 +30,14 @@ python scripts/check_native.py
 This optional check builds only the small standalone kernel in a temporary directory. It checks reset-after GRU equations, C/Python numerical agreement, neutral factors, immutable branch state, strict serialization, invalid inputs, overflow and atomic error output. It does not build or run NextGen.
 
 The [optional outlet check](docs/REPRODUCING.md#optional-outlet-model) exercises the retained GRU–Transformer on one synthetic example using MLX CPU inference. It needs additional packages and performs no training.
+
+## Saved research evaluation
+
+The [C physical-baseline bundle](results/c_physical_baseline_2019_10/README.md) retains **744 issues, 13,392 raw forecast cells and 13,203 scored cells** at USGS 03479000 over October 2019, with 1–18-hour leads. Pooled RMSE is **11.69 m³/s**, MAE **6.59 m³/s**, and forecast-minus-observation bias **+5.97 m³/s**. This is development-data physical-baseline evidence, not a corrected-versus-baseline or trained-neural improvement claim.
+
+![C development physical-baseline errors by forecast lead](results/c_physical_baseline_2019_10/lead_metrics.svg)
+
+Metrics CSV/JSON, report, figure, evaluation code/config and checksums are versioned. Bulk forecasts/observations and weights remain external. Recompute the saved aggregate arithmetic with `python scripts/check_baseline.py`; no private data or model execution is needed. Read the [scientific limitations](results/c_physical_baseline_2019_10/README.md#limits-on-interpretation) before interpreting the scores.
 
 ## What is here
 
@@ -58,6 +66,7 @@ The dotted connection is a research integration boundary. A bounded factor alone
 
 ## Research boundaries
 
+- [Working/publication map](docs/PROJECT_MAP.md) and [runbook](docs/RUNBOOK.md) define the authoritative portable source and results home; historical runtime copies remain frozen evidence.
 - [Scientific status and limitations](docs/STATUS.md) distinguishes implemented code, generated tests, historical experiments and proposed coupled studies.
 - [Architecture and numerical contracts](docs/ARCHITECTURE.md) explains internal versus outlet correction.
 - [Source provenance](docs/SOURCE_PROVENANCE.json) identifies each extracted file by exact hash and lists every packaging change.

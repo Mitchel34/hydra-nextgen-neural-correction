@@ -1,0 +1,103 @@
+{
+  "schema": "hydra-public-software-evaluation/1",
+  "snapshot_date": "2026-10-12",
+  "scope": "Bounded software fixtures and retained aggregate evidence only",
+  "core": {
+    "methods": 24,
+    "failures": 0,
+    "errors": 0,
+    "wall_seconds": 0.06352654192596674,
+    "scientific_fits_or_native_hydrology_runs": 0,
+    "exit_code": 0,
+    "groups": [
+      "evaluation guards (17)",
+      "synthetic demo (1)",
+      "baseline artifact/arithmetic rejection checks (6)"
+    ]
+  },
+  "native_kernel": {
+    "exit_code": 0,
+    "schema": "hydra-internal-neural-kernel-fixture-result/v1",
+    "status": "PASSED",
+    "roster": {
+      "test_cases": 15,
+      "successful_forward_calls_max": 4096,
+      "agreement_tolerance": {
+        "absolute": 2e-14,
+        "relative": 2e-13
+      },
+      "models": [
+        "mlp16 d3,81 parameters",
+        "gru32 d3,3489 parameters,R/Z/N reset-after,bhn fixed0"
+      ],
+      "source_inference_only": true,
+      "fits": 0,
+      "real_data": false,
+      "MLX_GPU_BMI_CFE_VM_calls": 0
+    },
+    "tests_run": 15,
+    "actual_calls": {
+      "C_success": 89,
+      "C_rejected": 43,
+      "Python_success": 89,
+      "Python_rejected": 10
+    },
+    "evidence": {
+      "library_sha256_before_load": "127c512e1d80639633d42d91a86b4ad8bdb282c9f1a4f4268721bc4ea29a1621",
+      "mlp_analytic": {
+        "normalized_input": [
+          1,
+          -0.5,
+          1
+        ],
+        "hidden0": 0.996997635486526,
+        "head": -0.6477482266148945
+      },
+      "reset_convention_oracle": {
+        "reset_after_h01": [
+          0.10131233988754801,
+          -0.174442516811659
+        ],
+        "reset_before_h01": [
+          0.2,
+          -0.26818777216816614
+        ],
+        "head_uses_candidate": -0.22757269373577002
+      },
+      "replay": {
+        "cold_steps": 24,
+        "branch_steps": 4,
+        "cold_exact": true,
+        "sibling_exact": true,
+        "changed_input_changes_candidate": true
+      }
+    },
+    "untrained_generated_parameters": true,
+    "library_sha256_after": "127c512e1d80639633d42d91a86b4ad8bdb282c9f1a4f4268721bc4ea29a1621",
+    "physical_or_neural_integration_proven": false,
+    "training_signal_or_forecast_skill_proven": false
+  },
+  "retained_baseline": {
+    "passed": true,
+    "pooled_recomputed": {
+      "MAE_cms": 6.59026054242611,
+      "RMSE_cms": 11.686679365777943,
+      "bias_forecast_minus_observation_cms": 5.972715863770979,
+      "cells": 13203
+    },
+    "scope": "retained aggregate arithmetic and hashes only"
+  },
+  "source_provenance_verification": {
+    "original_extracted_files": 11,
+    "new_reporting_files": 5,
+    "all_published_hashes_matched": true
+  },
+  "scientific_fits": 0,
+  "hydrologic_model_runs": 0,
+  "raw_forecast_or_observation_arrays_read_by_public_checks": false,
+  "optional_MLX_rerun": false,
+  "limitations": [
+    "Generated native fixtures do not establish physical coupling, water/energy closure or forecast skill.",
+    "The baseline evidence checker recomputes aggregates; it does not regenerate forecasts or authenticate raw observation vintages."
+  ]
+}

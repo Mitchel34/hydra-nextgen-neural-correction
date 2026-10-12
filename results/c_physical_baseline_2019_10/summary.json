@@ -1,0 +1,74 @@
+{
+  "E0_target_values_decoded": 0,
+  "USGS_parameter": "00060",
+  "baseline_kind": "physical_reference",
+  "complete_water_energy_closure": false,
+  "excluded_cells": 189,
+  "forecast_issues": 744,
+  "gauge": "03479000",
+  "hidden_land_state_equality_proven": false,
+  "issue_interval_hours": 1,
+  "issue_window_UTC": {
+    "start_inclusive": "2019-10-01T00:00:00Z",
+    "stop_exclusive": "2019-11-01T00:00:00Z"
+  },
+  "lead_hours": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "learned_fits": 0,
+  "learned_improvement_claim": false,
+  "limitations": [
+    "Physical baseline on C development data; no paired corrected or learned improvement comparison.",
+    "Constructed idealized-state research reforecast, not archived operational NextGen guidance.",
+    "Observation availability assumes retrospective valid time + 1 hour; actual publication latency is unverified.",
+    "Original C8/C9 native attempts remain UNKNOWN; recovered numerical validation and settled evaluation do not promote them to whole-run PASS.",
+    "Complete water/energy closure, hidden land-state equality, kernel-native branch parenthood and portable restart are unproven.",
+    "Raw forecasts and observations are external; these aggregates reproduce metric arithmetic but not native generation or the full raw-data join.",
+    "Earlier A/B/outlet studies have different supports/windows; no cross-window ranking is made here."
+  ],
+  "normalization": {
+    "fixed_reference_scale_cms": 27.25475208263832,
+    "meaning": "Retained source-defined A reference scale; not an A-versus-C or cross-window skill comparison",
+    "scale_refitted_on_C": false
+  },
+  "observation_availability": "retrospective valid+1h assumption; publication latency unverified",
+  "original_native_run_outcomes": {
+    "C8": "UNKNOWN",
+    "C9": "UNKNOWN"
+  },
+  "original_whole_run_PASS_claimed": false,
+  "outlet_segment": 1017693,
+  "paired_corrected_comparison_available": false,
+  "partition": "C_OUTLET_FIT_DEVELOPMENT",
+  "physical_identity": "local-cfe-noah1-replay-v1",
+  "pooled": {
+    "MAE_cms": 6.59026054242611,
+    "RMSE_cms": 11.686679365777943,
+    "bias_forecast_minus_observation_cms": 5.972715863770979,
+    "cells": 13203
+  },
+  "portable_restart_proven": false,
+  "raw_cells": 13392,
+  "schema": "hydra-public-physical-baseline-summary/1",
+  "scored_cells": 13203,
+  "snapshot_date": "2026-10-12",
+  "unique_observation_hours": 742,
+  "units": "m3 s-1"
+}

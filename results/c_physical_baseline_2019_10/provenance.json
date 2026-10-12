@@ -1,0 +1,19 @@
+{
+  "metrics_publication_transform": "Byte-for-byte retained aggregate CSV; no forecasts/observations included",
+  "metrics_source_sha256": "9c2034182288fb8aee0ff78df3b892d843a3e1cd3337c01581a94ba317e73375",
+  "original_comparator_source_sha256": "ae258b2de68101cef3f918a369a6e4a8984b5a29e180af76ea1f6e9334674485",
+  "private_execution_and_accounting_records_published": false,
+  "public_file_sha256": {
+    "metrics_by_lead.csv": "9c2034182288fb8aee0ff78df3b892d843a3e1cd3337c01581a94ba317e73375",
+    "run_manifest.json": "9639112e31c6aa569f6506e53e2850b79549d3771daf9f1d51823f10e3a003e4",
+    "summary.json": "27965a14f31cc6f3b91d877da7f732f3caff9957d82acd4cb668194a7fd0858f"
+  },
+  "schema": "hydra-public-baseline-provenance/1",
+  "snapshot_date": "2026-10-12",
+  "source_collection": "Retained HYDRA internal-correction physical reference research",
+  "source_result_body_published": false,
+  "source_result_schema": "hydra-recovered-physical-P-C-USGS-comparison/2",
+  "source_result_sha256": "02ae6071166d95c41e5ac5340023012856d71d0c919cb3d1543f1ca805bc9f59",
+  "source_verification": "The private result and composition/evaluation settlement bindings were hash-verified; pooled statistics were recomputed from the retained per-lead sufficient statistics. Public checks reproduce only aggregate arithmetic and artifact hashes.",
+  "summary_transform": "Select scientific scope/counts/metrics/limitations only; remove machine paths, process identities, source stat tuples and private operational records"
+}

@@ -12,6 +12,7 @@ dependencies = []
 
 [project.optional-dependencies]
 outlet = ["mlx==0.32.2", "numpy==2.5.3"]
+report = ["matplotlib>=3.10,<4"]
 
 [project.scripts]
 hydra-correctors = "hydra_correctors.demo:main"

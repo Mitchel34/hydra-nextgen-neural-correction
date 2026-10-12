@@ -1,0 +1,7 @@
+# INACTIVE proposal: this path is not automatically loaded as Codex config.
+# Consider <selected-primary-folder>/.codex/config.toml only after selection/review.
+# Preserve the old organizing project's supported semantics; no global change.
+# Existing cloud-thread effective context is not established by a local file.
+model_context_window = 872000
+model_auto_compact_token_limit = 697600
+model_auto_compact_token_limit_scope = "total"

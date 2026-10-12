@@ -10,3 +10,25 @@ dist/
 .DS_Store
 .env*
 local_outputs/
+
+# External bulk research inputs; keep small scientific results/evaluations tracked.
+local_artifacts/
+local_data/
+forecasts/
+observations/
+weights/
+private_records/
+*.npy
+*.npz
+*.pt
+*.pth
+*.sqlite
+*.sqlite3
+*.gpkg
+*.nc
+*.grib
+*.grib2
+*.pem
+*.key
+credentials*.json
+application_default_credentials.json

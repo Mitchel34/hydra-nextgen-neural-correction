@@ -12,3 +12,7 @@ The owner has authorized regular future commits and pushes to this curated publi
 8. Verify the public remote's visibility and exact commit, an anonymous fetch and browser rendering of the README and important links. Retain the reviewed manifest, validation evidence, independent verdict, resulting commit and verification record privately. Give downstream resume/website owners the verified URL. They own edits to those separate surfaces.
 
 If evidence or safe access is unavailable, keep the prepared update local and report the concrete blocker. Preserve failed checks and older scientific history. No automatic public claim promotion is permitted.
+
+## Owner clarification — 12 October 2026
+
+The owner selected this existing public recruiter-facing repository for the latest portable work and requested scientific results/evaluations in Git. Include small metrics CSV/JSON, reports/tables/figures, evaluation source/configuration and sanitized provenance/checksums. Keep bulk forecast/observation arrays, weights, private authority/accounting records, personal notes and secrets external. Avoid blanket results/artifacts ignores that hide findings. Preserve fixed-versus-trained and baseline-versus-corrected distinctions and do not compare separate A/B windows as a paired improvement. The requested independent parent review precedes the normal push; no new scientific execution or resource-limit change is authorized by publication.
