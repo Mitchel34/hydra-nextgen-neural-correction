@@ -25,7 +25,8 @@ def main():
                    "-dynamiclib" if sys.platform == "darwin" else "-shared",
                    str(root / "native/kernels.c"), "-o", str(library), "-lm"]
         subprocess.run(command, check=True, timeout=30)
-        env = dict(os.environ, PYTHONDONTWRITEBYTECODE="1", OMP_NUM_THREADS="1",
+        env = dict(os.environ, PYTHONDONTWRITEBYTECODE="1",
+                   PYTHONPATH=str(root / "src"), OMP_NUM_THREADS="1",
                    OPENBLAS_NUM_THREADS="1", VECLIB_MAXIMUM_THREADS="1",
                    HYDRA_KERNEL_LIBRARY=str(library),
                    HYDRA_KERNEL_LIBRARY_SHA256=hashlib.sha256(library.read_bytes()).hexdigest(),

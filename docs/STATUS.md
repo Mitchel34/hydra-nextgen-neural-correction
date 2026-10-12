@@ -5,6 +5,7 @@ Snapshot: 12 October 2026. This is a curated source publication, not a scientifi
 | Layer | What the source/evidence establishes | What it does not establish |
 | --- | --- | --- |
 | Current internal-correction continuation | Original standalone untrained MLP/GRU inference and strict artifacts; recovered physical C composition and USGS baseline scoring are now recorded | Zero learned fits and no paired corrected/internal-versus-outlet skill result; original native UNKNOWN and physics/state limitations remain |
+| Portable process bridge | Original strict JSON/binary codec, original synthetic ownership/transaction fixture, and original C/BMI adapter source | Generated tests and syntax checking do not establish native CFE execution, water/energy closure, hidden-state equality, restart fidelity or learned skill |
 | Current outlet architecture | Implemented MLX GRU–Transformer, forecast/error feature arms and Mamba comparison path | No weights or full data reconstruction supplied here; bare source checks are not a trained forecast product |
 | Earlier corrected outlet campaign | Separate September outlet experiments and older research exist | Those experiments are not this internal continuation or this demo; these fitted artifacts and assessments were not revalidated for publication; no score is promoted here |
 | Reforecast generation | Separate local generation/custody code and a separately published planning package | This repository does not generate NextGen reforecasts, supply a native runtime or reproduce the research archive |

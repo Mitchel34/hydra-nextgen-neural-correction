@@ -1,0 +1,86 @@
+{
+  "adapter_source_check": {
+    "compile_checks": 2,
+    "external_BMI_header_sha256": "ef287f3c3d17b887561fb0dbfcd2cd926fb61510e3e5e9bb38bede367a5bb595",
+    "linked_or_loaded_native_hydrologic_libraries": 0,
+    "passed": true,
+    "scope": "C11 source syntax and expected unsafe-math rejection only",
+    "third_party_header_or_implementation_redistributed": false,
+    "wall_seconds": 0.092
+  },
+  "budget_changes": 0,
+  "campaign_restarts": 0,
+  "hydrologic_model_calls": 0,
+  "limits": [
+    "No native CFE execution, component authenticity, conservation, hidden-state equality or portable-restart qualification.",
+    "No trained hydrologic skill or baseline-versus-corrected evaluation.",
+    "Unchanged optional MLX path was not rerun.",
+    "Timings describe bounded checks on one host, not training or deployment benchmarks."
+  ],
+  "new_bridge_unittest_methods": 28,
+  "paid_jobs": 0,
+  "passed": true,
+  "public_base_commit": "e86dbe345da9aac12478d4da18445f2e0c82cabc",
+  "python_group_seconds": 0.1474,
+  "python_groups": {
+    "test_baseline_report.py": {
+      "errors": 0,
+      "failures": 0,
+      "seconds": 0.0151,
+      "tests": 6
+    },
+    "test_bridge_artifacts.py": {
+      "errors": 0,
+      "failures": 0,
+      "seconds": 0.0671,
+      "tests": 6
+    },
+    "test_demo.py": {
+      "errors": 0,
+      "failures": 0,
+      "seconds": 0.029,
+      "tests": 1
+    },
+    "test_evaluation.py": {
+      "errors": 0,
+      "failures": 0,
+      "seconds": 0.0186,
+      "tests": 17
+    },
+    "test_process_boundary.py": {
+      "errors": 0,
+      "failures": 0,
+      "seconds": 0.0176,
+      "tests": 22
+    }
+  },
+  "python_version": "3.14.7",
+  "raw_forecast_observation_or_weight_inputs": 0,
+  "schema": "hydra-public-bridge-software-checks/1",
+  "scientific_fits": 0,
+  "snapshot_date": "2026-10-12",
+  "source_preservation": {
+    "C_adapter_source_and_header_byte_identical": true,
+    "artifact_codec_all_function_ASTs_unchanged": true,
+    "original_inference_evaluation_outlet_source_and_license_bytes_unchanged": true,
+    "process_boundary_source_byte_identical": true,
+    "process_boundary_test_logic_AST_unchanged": true
+  },
+  "standalone_kernel_check": {
+    "C_rejected": 43,
+    "C_source_linked": "native/kernels.c only",
+    "C_success": 89,
+    "Python_rejected": 10,
+    "Python_success": 89,
+    "agreement_tolerance": {
+      "absolute": 2e-14,
+      "relative": 2e-13
+    },
+    "generated_parameters_only": true,
+    "passed": true,
+    "tests_run": 15,
+    "wall_seconds": 0.4943
+  },
+  "synthetic_boundary_uses": "Invented MockPhysical bucket and opaque Sentinel; no neural network or CFE",
+  "total_unittest_methods": 67
+}

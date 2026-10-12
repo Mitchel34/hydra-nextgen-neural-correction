@@ -35,10 +35,11 @@
     },
     {
       "changes": [
-        "New public aggregate-report/check code; no native hydrologic component or private runtime copied."
+        "New public aggregate-report/check code; no native hydrologic component or private runtime copied.",
+        "Extend existing hash verifier to include the bridge source index."
       ],
       "public_path": "scripts/verify_source.py",
-      "published_sha256": "84d2cb3eba961b4dfe97fc464f1a2fd5629e352fe76243ba97c0ecff9dd647ec",
+      "published_sha256": "60305ed75ce939cc54e852b10857442fb9c4bcd4ddc2a67e0849054d716d8418",
       "source_collection": "Original HYDRA public reporting adaptation"
     }
   ],

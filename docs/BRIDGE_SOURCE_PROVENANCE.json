@@ -1,0 +1,91 @@
+{
+  "bulk_data_or_fitted_weights_imported": false,
+  "external_dependency_manifest": "native/cfe_adapter/DEPENDENCIES.json",
+  "files": [
+    {
+      "changes": [
+        "Replace private root/dynamic loader with package-local kernels.py identity check and relative import; all function ASTs and wire/math constants unchanged."
+      ],
+      "public_path": "src/hydra_correctors/bridge_artifacts.py",
+      "published_sha256": "d737a7b0093997f3dba6bf5c69c4219fa33be7acbc1649b619f0adfa65bdedd5",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "prototypes/cfe_neural_bridge_v1/artifacts.py",
+      "source_sha256": "8f0d376e9688a918cb0155b28e52ee353e8ff2dcc14456bd9c7710fdb01eca66"
+    },
+    {
+      "changes": [
+        "Byte-for-byte original HYDRA source copy."
+      ],
+      "public_path": "src/hydra_correctors/process_boundary.py",
+      "published_sha256": "d211e98b8da61b8a8fde024f0d8d2a987e6a6f5133c7720743c5f472313e46df",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "prototypes/neural_control_boundary_v1/boundary.py",
+      "source_sha256": "d211e98b8da61b8a8fde024f0d8d2a987e6a6f5133c7720743c5f472313e46df"
+    },
+    {
+      "changes": [
+        "Rename package import only; generated test logic unchanged."
+      ],
+      "public_path": "tests/test_process_boundary.py",
+      "published_sha256": "78339921ded2cdd02aad87d32510b3e83491254efd92d93ff6e4bb6729f105f0",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "prototypes/neural_control_boundary_v1/test_boundary.py",
+      "source_sha256": "0c0785f36cadfbb308163e48b4405bb41d820e9b131670cd5726180de49e608b"
+    },
+    {
+      "changes": [
+        "Byte-for-byte original HYDRA source copy."
+      ],
+      "public_path": "native/cfe_adapter/neural_bridge.c",
+      "published_sha256": "5694950668862ca97d530d37a3f7d438dc2f1bd9012e7532e2762a6845da35bb",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "prototypes/cfe_neural_bridge_v1/neural_bridge.c",
+      "source_sha256": "5694950668862ca97d530d37a3f7d438dc2f1bd9012e7532e2762a6845da35bb"
+    },
+    {
+      "changes": [
+        "Byte-for-byte original HYDRA source copy."
+      ],
+      "public_path": "native/cfe_adapter/neural_bridge.h",
+      "published_sha256": "64dec8d427b1ac79786d202adac765a1d804663bf72654e0b3bec5e8c7bb1313",
+      "source_collection": "HYDRA-Internal-Pilot",
+      "source_relative_path": "prototypes/cfe_neural_bridge_v1/neural_bridge.h",
+      "source_sha256": "64dec8d427b1ac79786d202adac765a1d804663bf72654e0b3bec5e8c7bb1313"
+    },
+    {
+      "changes": [
+        "New bounded software check; no trained weights, real-data records or upstream implementation."
+      ],
+      "public_path": "tests/test_bridge_artifacts.py",
+      "published_sha256": "32f5351856bff0220ea4a78cab6d72b04dbfea94553788f5b87e23215f0cf6a3",
+      "source_collection": "Original HYDRA public generated-fixture adaptation"
+    },
+    {
+      "changes": [
+        "New bounded software check; no trained weights, real-data records or upstream implementation."
+      ],
+      "public_path": "scripts/check_adapter_source.py",
+      "published_sha256": "f67022106bd46b4557d22e664de0751f0acb5a91e5854272042f65148ff63a34",
+      "source_collection": "Original HYDRA public generated-fixture adaptation"
+    },
+    {
+      "changes": [
+        "Select this checkout\u2019s Python source for the generated native-kernel fixture subprocess."
+      ],
+      "public_path": "scripts/check_native.py",
+      "published_sha256": "18ed470afc31dc57bb7be2696f63c4f2e34b232e363685928685a2790d75a463",
+      "source_collection": "Existing HYDRA public helper",
+      "source_commit": "e86dbe345da9aac12478d4da18445f2e0c82cabc",
+      "source_relative_path": "scripts/check_native.py",
+      "source_sha256": "8ceb1bdb8ca5118895920f7b6d08ade76375d9025c61b5fc10a80a223302050f"
+    }
+  ],
+  "new_project_license_assigned": false,
+  "original_inference_evaluation_outlet_mathematics_changed": false,
+  "private_authority_ledger_host_custody_imported": false,
+  "public_base_commit": "e86dbe345da9aac12478d4da18445f2e0c82cabc",
+  "schema": "hydra-public-bridge-source-provenance/1",
+  "snapshot_date": "2026-10-12",
+  "third_party_source_or_header_vendored": false,
+  "validation_record": "results/bridge_checks_2026_10_12.json"
+}

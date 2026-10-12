@@ -1,0 +1,24 @@
+{
+  "checks_allowed_by_this_package": "Local source syntax and unsafe-math rejection with explicit external header only",
+  "external_CFE_context": {
+    "implementation_redistributed": false,
+    "license_name": "Apache-2.0",
+    "license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "license_url": "https://raw.githubusercontent.com/NOAA-OWP/cfe/a349a953ef239ae7470a8365cf614283d7e6ca80/LICENSE",
+    "recorded_source_commit": "a349a953ef239ae7470a8365cf614283d7e6ca80",
+    "repository": "https://github.com/NOAA-OWP/cfe",
+    "source_to_deployed_binary_attested": false
+  },
+  "external_header": {
+    "name": "bmi.h",
+    "notice": "Copyright (c) 2014 Community Surface Dynamics Modeling System; MIT notice embedded in header",
+    "redistributed": false,
+    "sha256": "ef287f3c3d17b887561fb0dbfcd2cd926fb61510e3e5e9bb38bede367a5bb595",
+    "source_url": "https://raw.githubusercontent.com/NOAA-OWP/cfe/a349a953ef239ae7470a8365cf614283d7e6ca80/include/bmi.h",
+    "upstream_origin": "csdms/bmi-c, commit e6f9f8a (recorded in header)"
+  },
+  "header_download_or_native_execution_in_checker": false,
+  "new_project_license_assigned": false,
+  "schema": "hydra-external-adapter-dependencies/1",
+  "snapshot_date": "2026-10-12"
+}

@@ -2,7 +2,7 @@
 
 Research software for correcting hydrologic forecasts at two levels: **outlet streamflow residuals** and **selected internal process interfaces**. This is the current neural-correction project in Mitchel Carson's HYDRA research, published as a small, inspectable source snapshot.
 
-The public package includes original C/Python MLP and GRU inference kernels, forecast-availability and evaluation guards, and the retained MLX GRU–Transformer outlet architecture. The default demo is deterministic, offline and dependency-free.
+The public package includes original C/Python MLP and GRU inference kernels, a strict bridge-artifact codec, synthetic process/state-boundary fixtures, HYDRA C/BMI adapter source, forecast-availability and evaluation guards, and the retained MLX GRU–Transformer outlet architecture. The default demo is deterministic, offline and dependency-free.
 
 **Status — 12 October 2026:** engineering research, not an operational forecasting system. The current internal-correction continuation has zero learned fits. A composed physical baseline on October 2019 C development data has now been scored against USGS and its small evaluation products are included below. It has no paired learned-correction result; original native-run and physics/state limitations remain explicit. Earlier outlet studies are separate and are not ranked against this C window.
 
@@ -31,6 +31,17 @@ This optional check builds only the small standalone kernel in a temporary direc
 
 The [optional outlet check](docs/REPRODUCING.md#optional-outlet-model) exercises the retained GRU–Transformer on one synthetic example using MLX CPU inference. It needs additional packages and performs no training.
 
+## Portable bridge source
+
+The [bridge guide](docs/BRIDGE.md) describes the original JSON/binary artifact format, generated process/state fixtures, and original [C/BMI adapter](native/cfe_adapter/README.md). Run the two dependency-free generated test groups after installing the package:
+
+```sh
+python -m unittest discover -s tests -p test_bridge_artifacts.py -v
+python -m unittest discover -s tests -p test_process_boundary.py -v
+```
+
+The 22 state-boundary tests use an invented bucket and an opaque ownership sentinel. They do not execute the GRU or CFE. Adapter source is preserved for inspection; its optional syntax check requires an explicit external BMI header and loads no physical model. Native integration remains unqualified.
+
 ## Saved research evaluation
 
 The [C physical-baseline bundle](results/c_physical_baseline_2019_10/README.md) retains **744 issues, 13,392 raw forecast cells and 13,203 scored cells** at USGS 03479000 over October 2019, with 1–18-hour leads. Pooled RMSE is **11.69 m³/s**, MAE **6.59 m³/s**, and forecast-minus-observation bias **+5.97 m³/s**. This is development-data physical-baseline evidence, not a corrected-versus-baseline or trained-neural improvement claim.
@@ -44,6 +55,7 @@ Metrics CSV/JSON, report, figure, evaluation code/config and checksums are versi
 | Component | Implementation | Public evidence and limits |
 | --- | --- | --- |
 | Internal MLP / GRU | [Python reference](src/hydra_correctors/kernels.py), [C99 kernels](native/kernels.c), [explicit ABI](native/kernels.h) | Untrained inference arithmetic; 81 / 3,489 parameters; factor in `[0.5, 2]`; no physical update or optimizer |
+| Portable bridge | [Artifact codec](src/hydra_correctors/bridge_artifacts.py), [synthetic process boundary](src/hydra_correctors/process_boundary.py), [C/BMI adapter source](native/cfe_adapter/README.md) | Generated state/serialization checks and source syntax only; no linked CFE execution or physics qualification |
 | Outlet correction | [Retained MLX architectures](src/hydra_correctors/outlet/models_mlx.py) | GRU–Transformer predicts 18 normalized residuals from 168 hours of history and issued forecast/error features; no fitted weights included |
 | Evaluation contracts | [Timing, scaling, lineage and paired scoring](src/hydra_correctors/evaluation.py) | Rejects future observations, overlapping stack support and incomplete prediction keys; metadata validation cannot authenticate real data vintages |
 | Reproduction | [Checks and environment](docs/REPRODUCING.md), [validation record](docs/VALIDATION.md) | Small generated fixtures and two outlet forward calls; no model training, data download or physical reforecast |
@@ -62,14 +74,14 @@ flowchart LR
   R --> E
 ```
 
-The dotted connection is a research integration boundary. A bounded factor alone does not prove water balance, energy balance, native compatibility or hydrologic skill. Candidate recurrent state must be committed only after a successful physical update. This public package does not implement that coupled transaction.
+The dotted connection is a research integration boundary. A bounded factor alone does not prove water balance, energy balance, native compatibility or hydrologic skill. Candidate recurrent state must be committed only after a successful physical update. The original adapter source implements candidate-state commit and failure poisoning around a caller-supplied BMI component. The public checks exercise a separate synthetic transaction fixture and type-check the adapter; they do not qualify its native coupled execution.
 
 ## Research boundaries
 
 - [Working/publication map](docs/PROJECT_MAP.md) and [runbook](docs/RUNBOOK.md) define the authoritative portable source and results home; historical runtime copies remain frozen evidence.
 - [Scientific status and limitations](docs/STATUS.md) distinguishes implemented code, generated tests, historical experiments and proposed coupled studies.
 - [Architecture and numerical contracts](docs/ARCHITECTURE.md) explains internal versus outlet correction.
-- [Source provenance](docs/SOURCE_PROVENANCE.json) identifies each extracted file by exact hash and lists every packaging change.
+- [Original source provenance](docs/SOURCE_PROVENANCE.json) and [bridge provenance](docs/BRIDGE_SOURCE_PROVENANCE.json) identify extracted files by exact hash and list packaging changes.
 - [Publication boundary and future update contract](docs/PUBLICATION_CONTRACT.md) governs reviewed checkpoint updates.
 
 Three separate projects have separate responsibilities:

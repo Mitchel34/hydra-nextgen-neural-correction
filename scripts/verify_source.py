@@ -5,7 +5,8 @@ from pathlib import Path
 
 
 root = Path(__file__).resolve().parents[1]
-manifests = ["docs/SOURCE_PROVENANCE.json", "docs/CONSOLIDATION_PROVENANCE.json"]
+manifests = ["docs/SOURCE_PROVENANCE.json", "docs/CONSOLIDATION_PROVENANCE.json",
+             "docs/BRIDGE_SOURCE_PROVENANCE.json"]
 entries = []
 for name in manifests:
     entries.extend(json.loads((root / name).read_text())["files"])

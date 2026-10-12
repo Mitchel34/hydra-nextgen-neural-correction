@@ -27,7 +27,9 @@ The candidate recurrent bias is fixed at zero. This is not a stock MLX checkpoin
 
 C output is `[head, factor, hidden...]`; every error leaves output unchanged. Output/input overlap is rejected. Dots accumulate from zero in column order before adding bias; all used inputs and intermediates must remain finite. Compile without fast-math or floating-point contraction. Python serializes exact canonical JSON with feature, layout, scaler and model content identities; pickle is never used.
 
-Returned GRU state is only a candidate. The private research explores application at selected hydrologic process interfaces; this package supplies no native callback, water/energy conservation proof, optimizer, successful state-commit protocol or trained internal corrector.
+Returned GRU state is only a candidate. The [original C/BMI adapter source](../native/cfe_adapter/README.md) stages raw demand and liquid input, reads pre-update soil storage, and commits the candidate frame/hidden state only after the original physical update succeeds with the expected clock and finite storage. Failed or partial updates poison the wrapper; it does not pretend to roll back opaque physical state. The neutral head avoids a demand override.
+
+This is source preservation, not qualified native execution. The external component must satisfy the expected variable, unit, scalar, clock and lifecycle contracts; its current deployed identity, state fidelity and conservation remain unverified. No CFE implementation, physical data, optimizer or trained internal corrector is supplied. The Python [process-boundary fixture](BRIDGE.md) models ownership and transaction order with an invented bucket and opaque sentinel, not CFE or the GRU.
 
 ## Evaluation
 
