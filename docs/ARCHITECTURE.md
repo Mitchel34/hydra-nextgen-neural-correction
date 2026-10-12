@@ -29,6 +29,8 @@ C output is `[head, factor, hidden...]`; every error leaves output unchanged. Ou
 
 Returned GRU state is only a candidate. The [original C/BMI adapter source](../native/cfe_adapter/README.md) stages raw demand and liquid input, reads pre-update soil storage, and commits the candidate frame/hidden state only after the original physical update succeeds with the expected clock and finite storage. Failed or partial updates poison the wrapper; it does not pretend to roll back opaque physical state. The neutral head avoids a demand override.
 
+The C artifact loader validates structure and fixed feature/layout IDs; it records model/scaler IDs and file-hash tags without cryptographically recomputing them. Native callers must verify canonical model contents and actual model/config hashes before initialization, around operations and after cleanup, and permanently reject a trajectory after drift. No enforcing native caller is supplied; see [required caller verification](BRIDGE.md#required-caller-verification).
+
 This is source preservation, not qualified native execution. The external component must satisfy the expected variable, unit, scalar, clock and lifecycle contracts; its current deployed identity, state fidelity and conservation remain unverified. No CFE implementation, physical data, optimizer or trained internal corrector is supplied. The Python [process-boundary fixture](BRIDGE.md) models ownership and transaction order with an invented bucket and opaque sentinel, not CFE or the GRU.
 
 ## Evaluation

@@ -6,6 +6,14 @@ The adapter stages demand/liquid features, records pre-update soil storage, appl
 
 The retained source requires POSIX dynamic-loading/process interfaces and ordinary binary64 math. Its original configuration/artifact parsing and lifecycle assumptions are research integration code. No build/runtime configuration or native campaign launcher is supplied, and no end-to-end CFE qualification is claimed.
 
+## Structural loading and caller verification
+
+The C loader checks format, dimensions, finite values, positive scales and fixed feature/layout IDs. It records model/scaler IDs and `model_file_sha256`/`config_sha256` as declared tags without recomputing their content or file hashes. A finite parameter change retaining those tags can pass its structural checks.
+
+The required caller contract is to verify canonical JSON↔binary model contents and actual model/config SHA-256 values against frozen bindings before initialization, before and after operations, and after cleanup. Drift must permanently reject/poison that caller trajectory; restoring files cannot authorize reuse or hot reload. A changed model, scaler or configuration requires a fresh physical/neural origin. See [required caller verification](../../docs/BRIDGE.md#required-caller-verification).
+
+No enforcing native caller is included. The Python model codec is stateless, and the public compiler check neither verifies model/config files around a native operation nor exercises drift rejection.
+
 ## Bounded source check
 
 Supply the exact external header identified in [DEPENDENCIES.json](DEPENDENCIES.json):
