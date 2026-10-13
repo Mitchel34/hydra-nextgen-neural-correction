@@ -41,11 +41,45 @@
       "public_path": "scripts/verify_source.py",
       "published_sha256": "60305ed75ce939cc54e852b10857442fb9c4bcd4ddc2a67e0849054d716d8418",
       "source_collection": "Original HYDRA public reporting adaptation"
+    },
+    {
+      "changes": [
+        "New original source, generated checks or documentation authored for the public package; no private code, data, model weights or third-party implementation copied."
+      ],
+      "public_base_commit": "134ca3af8c21310f771c28b602322345503b76f3",
+      "public_path": "src/hydra_correctors/paired_comparison.py",
+      "published_sha256": "6d12d53b970b6202a62ccd710b99a67b1baa944ef26bf8de9c4c53a5b9d5e221",
+      "source_collection": "Original HYDRA public paired-comparison addition"
+    },
+    {
+      "changes": [
+        "New original source, generated checks or documentation authored for the public package; no private code, data, model weights or third-party implementation copied."
+      ],
+      "public_base_commit": "134ca3af8c21310f771c28b602322345503b76f3",
+      "public_path": "tests/test_paired_comparison.py",
+      "published_sha256": "d4e48e89bbfb9bc7a7d22a136ec94a1cf9bc4971142f0520b7246d4bd0cb76d7",
+      "source_collection": "Original HYDRA public paired-comparison addition"
+    },
+    {
+      "changes": [
+        "New original source, generated checks or documentation authored for the public package; no private code, data, model weights or third-party implementation copied."
+      ],
+      "public_base_commit": "134ca3af8c21310f771c28b602322345503b76f3",
+      "public_path": "docs/PAIRED_COMPARISON.md",
+      "published_sha256": "78c68f02fa84e70f66bf504bf8611d2a6591c0e5cd74897ca4466e35aa9ff2f5",
+      "source_collection": "Original HYDRA public paired-comparison addition"
     }
   ],
   "new_third_party_source_vendored": false,
   "original_extraction_manifest": "docs/SOURCE_PROVENANCE.json",
   "original_license_status_unchanged": true,
+  "paired_comparison_addition": {
+    "new_third_party_source_vendored": false,
+    "public_base_commit": "134ca3af8c21310f771c28b602322345503b76f3",
+    "scientific_runs_or_learned_fits": 0,
+    "scope": "New original dependency-free public comparison helper, generated tests and guide. Existing evaluation and scientific results unchanged.",
+    "snapshot_date": "2026-10-13"
+  },
   "private_source_histories_or_runtime_records_imported": false,
   "public_base_commit": "7be0b1848dc180b506ac22ec00169aebd3c798f7",
   "schema": "hydra-public-consolidation-provenance/1",

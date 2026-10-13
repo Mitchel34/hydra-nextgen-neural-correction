@@ -57,7 +57,7 @@ Metrics CSV/JSON, report, figure, evaluation code/config and checksums are versi
 | Internal MLP / GRU | [Python reference](src/hydra_correctors/kernels.py), [C99 kernels](native/kernels.c), [explicit ABI](native/kernels.h) | Untrained inference arithmetic; 81 / 3,489 parameters; factor in `[0.5, 2]`; no physical update or optimizer |
 | Portable bridge | [Artifact codec](src/hydra_correctors/bridge_artifacts.py), [synthetic process boundary](src/hydra_correctors/process_boundary.py), [C/BMI adapter source](native/cfe_adapter/README.md) | Generated state/serialization checks and source syntax only; no linked CFE execution or physics qualification |
 | Outlet correction | [Retained MLX architectures](src/hydra_correctors/outlet/models_mlx.py) | GRU–Transformer predicts 18 normalized residuals from 168 hours of history and issued forecast/error features; no fitted weights included |
-| Evaluation contracts | [Timing, scaling, lineage and paired scoring](src/hydra_correctors/evaluation.py) | Rejects future observations, overlapping stack support and incomplete prediction keys; metadata validation cannot authenticate real data vintages |
+| Evaluation contracts | [Timing, scaling, lineage and paired scoring](src/hydra_correctors/evaluation.py); [two-forecast comparison](docs/PAIRED_COMPARISON.md) | Rejects future observations, overlapping stack support and incomplete prediction keys; compares both forecasts on shared targets/masks/scales; metadata validation cannot authenticate real data vintages |
 | Reproduction | [Checks and environment](docs/REPRODUCING.md), [validation record](docs/VALIDATION.md) | Small generated fixtures and two outlet forward calls; no model training, data download or physical reforecast |
 
 ```mermaid

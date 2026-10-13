@@ -54,3 +54,24 @@ This separate source addition preserves the original artifact codec, synthetic p
 All 67 unittest methods passed on Python 3.14.7. The five dependency-free Python groups took about 0.15 seconds, the standalone native helper about 0.49 seconds including compilation, and the two adapter syntax calls about 0.09 seconds on this host. Model coefficients and boundary inputs were generated; the retained-baseline regression reads only the previously published aggregate evidence. No raw forecasts/observations, trained weights, scientific fits, hydrologic calls, VM launch, archive work, paid jobs or campaign/budget changes occurred.
 
 The [machine-readable bridge record](../results/bridge_checks_2026_10_12.json), [source index](BRIDGE_SOURCE_PROVENANCE.json), [guide](BRIDGE.md) and [external dependency manifest](../native/cfe_adapter/DEPENDENCIES.json) describe the exact scope. A synthetic state fixture and C syntax success cannot establish current native physical coupling, lifecycle safety, water/energy closure, hidden-state equality or restart fidelity. The unchanged optional MLX path was not rerun. This addition follows the same independent frozen-tree review requirement as the previous publication.
+
+## Paired comparison preparation — 13 October 2026
+
+The new [two-forecast comparison helper](PAIRED_COMPARISON.md) reuses the existing
+scorer with shared keys, targets, masks and scales. It reports explicit
+candidate-minus-baseline error differences and a versioned comparison-context
+digest. The evaluation source and existing scientific result files are unchanged.
+
+| Check actually executed | Result |
+| --- | --- |
+| New paired-comparison contracts using generated values | 14 tests passed |
+| Existing evaluation, demo and retained-baseline regression groups | 24 tests passed: 17 + 1 + 6 |
+| Existing source verifier, including the three newly indexed files | 27 provenance-bound files matched |
+
+All 38 methods passed without failures, errors or skips on Python 3.14.7 using
+sequential dependency-free Python checks. The retained-baseline tests read only
+the already published aggregate bundle. No raw research data, model fitting,
+scientific forecast, native physical execution, archive regeneration or paid job
+was used. Native and optional MLX checks were not rerun for this Python comparison
+addition. Passing these arithmetic and rejection checks supplies no paired
+learned-correction result or forecast/training qualification.
