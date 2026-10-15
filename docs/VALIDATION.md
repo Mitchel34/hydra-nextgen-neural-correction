@@ -75,3 +75,18 @@ scientific forecast, native physical execution, archive regeneration or paid job
 was used. Native and optional MLX checks were not rerun for this Python comparison
 addition. Passing these arithmetic and rejection checks supplies no paired
 learned-correction result or forecast/training qualification.
+
+## Publication preparation — 15 October 2026
+
+In an isolated publication checkout on Python 3.14.7, the paired-comparison,
+evaluation, demo and retained-baseline groups passed all 38 methods in 0.033
+seconds, without failures, errors or skips. The source verifier matched all 27
+provenance-bound files. These checks used generated values and the previously
+published aggregate baseline only; no raw research data, model fitting, native
+hydrologic execution, paid compute or dependency download was used.
+
+The qualification and cost-estimation guide is a proposed measurement method,
+not a benchmark result or executable training service. Its resource examples
+do not establish runtime, cloud readiness or learned-correction skill. Native,
+MLX, cloud recovery and whole-history qualification were not rerun for this
+publication preparation.

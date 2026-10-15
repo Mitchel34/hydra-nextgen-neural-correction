@@ -81,6 +81,7 @@ The dotted connection is a research integration boundary. A bounded factor alone
 - [Working/publication map](docs/PROJECT_MAP.md) and [runbook](docs/RUNBOOK.md) define the authoritative portable source and results home; historical runtime copies remain frozen evidence.
 - [Scientific status and limitations](docs/STATUS.md) distinguishes implemented code, generated tests, historical experiments and proposed coupled studies.
 - [Architecture and numerical contracts](docs/ARCHITECTURE.md) explains internal versus outlet correction.
+- [Qualification and cost estimation](docs/QUALIFICATION_AND_COST_ESTIMATION.md) proposes staged checks, workload-bound profiling and explicit cost estimates for future studies.
 - [Original source provenance](docs/SOURCE_PROVENANCE.json) and [bridge provenance](docs/BRIDGE_SOURCE_PROVENANCE.json) identify extracted files by exact hash and list packaging changes.
 - [Publication boundary and future update contract](docs/PUBLICATION_CONTRACT.md) governs reviewed checkpoint updates.
 
